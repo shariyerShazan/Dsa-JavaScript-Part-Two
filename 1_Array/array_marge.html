@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>array marge</title>
+  </head>
+  <body></body>
+  <script>
+    let arrOne = [34, 45, 64, 24, 94, 78, 24];
+    let arrTwo = [94, 34, 56, 38, 93, 85, 81];
+    let data = [];
+    document.write(`array one is -> ${arrOne} <br/>`);
+    document.write(`array two is -> ${arrTwo} <br/>`);
+    for (let i = 0; i < arrOne.length ; i++) {
+      data[i] = arrOne[i];
+    }
+    let index = arrOne.length;
+    for (let j = 0; j < arrTwo.length ; j++) {
+      data[index] = arrTwo[j];
+      index++
+    }
+    document.write(`Now marged array is -> ${data}`);
+  </script>
+</html>

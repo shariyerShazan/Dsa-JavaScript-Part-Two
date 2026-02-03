@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>array marge</title>
+  </head>
+  <body></body>
+  <script>
+    let arrOne = [34, 45, 64, 24, 94, 78, 24];
+    let arrTwo = [94, 34, 56, 38, 93, 85, 81];
+    document.write(`array one is -> ${arrOne} <br/>`);
+    document.write(`array two is -> ${arrTwo} <br/>`);
+    let data = [];
+    data = [...arrOne, ...arrTwo];
+    document.write(`${data} <br/>`);
+    document.write(`reverse data = ${data.reverse()}`);
+  </script>
+</html>

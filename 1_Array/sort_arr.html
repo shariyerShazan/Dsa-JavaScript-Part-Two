@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Sort array</title>
+  </head>
+  <body></body>
+  <script>
+    let arr = [4, 64, 46, 99, 57, 35, 64, 98, 72, 46, 86];
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = 0; j < arr.length; j++) {
+        if (arr[j] < arr[j + 1]) {
+          let temp = arr[j];
+          arr[j] = arr[j + 1];
+          arr[j + 1] = temp;
+        }
+      }
+    }
+    document.write(arr)
+    document.write("<br/>")
+
+     let arr2 = [4, 64, 46, 99, 57, 35, 64, 98, 72, 46, 86];
+    for (let i = 0; i < arr2.length; i++) {
+      for (let j = 0; j < arr2.length; j++) {
+        if (arr2[j] > arr2[j + 1]) {
+          let temp2 = arr2[j];
+          arr2[j] = arr2[j + 1];
+          arr2[j + 1] = temp2;
+        }
+      }
+    }
+    document.write(arr2)
+  </script>
+</html>
