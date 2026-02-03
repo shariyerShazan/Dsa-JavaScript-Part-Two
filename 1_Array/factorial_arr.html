@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Factorial</title>
+</head>
+<body>
+    <script>
+        //Recursive factorial
+          const factorial = (num)=> {
+            if(num === 0){
+                return 1
+            }
+            return num*factorial(num-1)
+          }
+          document.write(factorial(5))
+
+        // const factorial = (num)=> {
+        //     if(num==0){
+        //         return 1
+        //     }
+        //    let output = 1
+        //    for(let i =1 ; i <= num  ; i++){
+        //       output =  output * i
+        //    }
+        //    return output
+        // }
+        // document.write(factorial(5))
+    </script>
+    
+</body>
+</html>
