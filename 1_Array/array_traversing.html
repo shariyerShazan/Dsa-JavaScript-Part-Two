@@ -1,13 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <title>Array Traversing</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body style="background-color: black; color: white">
+    <div>
+      <input type="text" name="arrFind" id="arrFind" />
+      <button type="submit" onclick="findNum()">Submit</button>
+    </div>
+  </body>
+  <!-- javascript -->
+  <script>
+    let data = [1, 5, 33, 67, 35, 97, 24, 78, 35, 98, 56, 78];
+    // for (let i = 0; i < data.length; i++) {
+    //   document.write(`Array ${i} no element is ${data[i]} <br/>`);
+    // }
+    function findNum() {
+      const el = parseInt(document.getElementById("arrFind").value);
 
-<!-- javascript -->
-<script src="./array_traversing.js">
-</script>
+      if (el < data.length) {
+        alert(`Your selected index number is ${data[el]}`);
+      }else if (typeof el !== "number"){
+        alert("Value shuld be a number!")
+      }
+      else {
+        alert(`Please select a valid number betweend 0 to ${data.length}`)
+      }
+    }
+  </script>
 </html>
